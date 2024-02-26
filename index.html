@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -14,15 +14,15 @@
 
 <!-- header -->
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light custom-navbar" style="position: fixed;
-top: 0; z-index: 199; width: 100%;">
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #452a77; padding: 6px 5%; position: fixed; top: 0; width: 100%; z-index: 9999; margin-bottom: 0;">
+
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Portofolio</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler " style="color: #553a837c;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav ms-auto">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#Home">Home</a>
         </li>
@@ -32,99 +32,107 @@ top: 0; z-index: 199; width: 100%;">
         <li class="nav-item">
           <a class="nav-link" href="#AboutMe">About Me</a>
         </li>
-    
       </ul>
     </div>
   </div>
 </nav>
 
+
+
+
 <!-- ====================== -->
 <!-- Jumbotron -->
-<div class="jumbotron  "  style="padding: 80px 30px  "; id="Home" >
+<div class="jumbotron" style="background-color: #452a77; padding: 80px 30px 60px  20px ; height: 100%;" id="Home">
+  <div class="containerr">
+
   
-  <!-- محتوى النص -->
-   <div class="float-end  ">
-  <h3 class="display-4 fs-4 " style="font-weight: 380;">Mohamed's <br><span class="text-primary fs-1">Portofolio</span>  </h3>
-  <h2  class="text-dark "> Iam <span class="text-primary" id="auto-type" ></span></h2>
-  <p class="lead"> </p>
-      
-      <!-- روابط وسائل التواصل الاجتماعي -->
-      <div>
-        <a href="#" class="btn btn-outline-success btn-lg me-2" role="button"> <i class="fa-brands fa-facebook"></i></a>
-        <a href="#" class="btn btn-outline-success  btn-lg me-2" role="button"> <i class="fa-brands fa-square-instagram"></i> </a>
-        <a href="#" class="btn btn-outline-success  btn-lg me-2" role="button"> <i class="fa-brands fa-linkedin"></i></a>
-        <a href="#" class="btn btn-outline-success  btn-lg me-2" role="button"> <i class="fa-brands fa-github"></i></a>
-      </div>
-      
-      <!-- روابط -->
-      <div class="mt-3">
-        <a href="#" class="btn btn-outline-primary me-2" role="button"> Download My CV  </a>
-        <a href="#" class="btn btn-outline-primary" role="button">View Projects</a>
-      </div>
-    </div>
-     <!-- صورة -->
-     <img src="image/Layer 1.png" class="float-start" alt="Image">
 
+
+      <div class="row">
+          <!-- محتوى النص -->
+          <div class="col-md-6">
+  <h3 class="display-4 fs-5 text-light" style="font-weight: 380; font-family:  serif;">Mohamed's <br><span class="text-warning  " style="font-size: 35px ;">Portfolio</span></h3>
+  <h2 class="text-light">Iam <span class="text-warning " id="auto-type"></span></h2>
+  <p class="lead"></p>
+  <!-- روابط وسائل التواصل الاجتماعي -->
+  <div>
+      <a href="#" class="btn btn-outline-light btn-lg me-2" role="button"><i class="fab fa-facebook"></i></a>
+      <a href="#" class="btn btn-outline-light btn-lg me-2" role="button"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="btn btn-outline-light btn-lg me-2" role="button"><i class="fab fa-linkedin"></i></a>
+      <a href="#" class="btn btn-outline-light btn-lg me-2" role="button"><i class="fab fa-github"></i></a>
   </div>
-
-
-  <!-- first sections  Services -->
-  <div class="container">
-    <div class="text-center m-5 text-primary">
-      <h3>My Services </h3>
-    </div>
-    <div class="row " >
-      <div class="col-md-4 " style="margin:  5px 0 ;" >
-        <div class="card border border-warning " style="height: 280px ; width: 300px ;">
-          <img src="image/images.jpg" class="card-img-top" alt="..." style="height: 200px ;">
-          <div class="card-body">
-            <h5 class="card-title just-content-center">
-              Responsive Desine</h5>
-            <p class="card-text">"Excellent in c
-              reating responsive design on all device screens."</p>
+  <!-- روابط -->
+  <div class="mt-3">
+    <a href="#progects" class="btn btn-light text-light  m-1 bg-warning" role="button">View Projects</a>
+    <a href="#" class="btn btn-light text-light  m-1 bg-warning me-2" role="button">Download My CV</a>
+              </div>
           </div>
-        </div>
+          <!-- الصورة -->
+          <div class="col-md-6 text-center">
+              <img src="image/Layer 1.png" class="img-fluid" alt="Image" style="float: right; width: 350px ;
+              height: 350px;">
+                 <div class="custom-bg"></div>
+ 
+          </div>
+      </div>
+  </div>
+</div>
+<!-- ------------------- -->
+  <!-- first sections  Services -->
+  <div class="containerr" style="background-color: #452a77;"id="Services">
+    <div class="text-center   text-primary">
+      <h3 class="text-warning" style="padding: 20px 0 ;"> <span class="text-light">My</span> Services </h3>
+    </div>
+    <div class="row container "  id="rowServices" >
+      <div class="col-md-3  text-center" style="margin: 7px 2px ;">
+          <div class="card border border-warning" style="height: 290px; width: 270px;">
+              <img src="image/service.jpg" class="card-img-top" alt="..." style="height: 200px;">
+              <div class="card-body">
+                  <h5 class="card-title just-content-center">
+                      Responsive Design</h5>
+                  <p class="card-text"  style="font-size: 10px; width: 90%;">"Excellent in creating responsive design on all device screens."</p>
+              </div>
+          </div>
       </div>
       <!-- Add more cards here -->
-      <div class="col-md-4 " style="margin:  5px 0 ;" >
-        <div class="card border border-warning " style="height: 280px ; width: 300px ;">
-          <img src="image/island 1.png" class="card-img-top" alt="..." style="height: 200px ;">
-          <div class="card-body">
-            <h5 class="card-title just-content-center">
-              Responsive Desine</h5>
-            <p class="card-text">"Excellent in c
-              reating responsive design on all device screens."</p>
+      <div class="col-md-3 text-center" style="margin: 7px 2px ; ">
+          <div class="card border border-warning" style="height: 290px; width: 270px;">
+              <img src="image/imagesss.jpg" class="card-img-top" alt="..." style="height: 200px;">
+              <div class="card-body">
+                  <h5 class="card-title just-content-center">
+Clean Code</h5>
+                  <p class="card-text"  style="font-size: 10px; width: 90%;"> "I take pride in producing clean code that is easy to understand and maintain."</p>
+              </div>
           </div>
-        </div>
       </div>
       <!-- add more cards  -->
-      <div class="col-md-4" style="margin:  5px 0 ;">
-        <div class="card border border-warning " style="height: 280px ; width: 300px ;">
-          <img src="image/island 1.png" class="card-img-top" alt="..." style="height: 200px ;">
-          <div class="card-body">
-            <h5 class="card-title just-content-center">
-              Responsive Desine</h5>
-            <p class="card-text">"Excellent in c
-              reating responsive design on all device screens."</p>
+      <div class="col-md-3 text-center " style="margin: 7px 2px ;">
+          <div class="card border border-warning" style="height: 290px; width: 270px;">
+              <img src="image/service2.jpg" class="card-img-top" alt="..." style="height: 200px;">
+              <div class="card-body">
+                  <h5 class="card-title just-content-center">
+                    Designing and developing</h5>
+                  <p class="card-text " style="font-size: 10px; width: 90%;"> "Designing and developing are crucial steps in creating successful products and services."</p>
+              </div>
           </div>
-        </div>
       </div>
-    </div>
+  </div>
   </div>
 
 <!-- about me -->
-<div class="container   " style="padding:20px 6px  ;" id="AboutMe">
+<div class="containerr   " style="padding:20px 10px  ;background-color: #452a77" id="AboutMe">
   <div class="text-center   text-primary" style="padding-top: 20px ;">
-    <h3> About Me </h3>
+    <h3 class="text-warning"> About <span class="text-light">Me</span>  </h3>
   </div>
-  <div class="row" id="about">
+  <div class="row" id="about" style="padding: 20px 3%;">
     <div class="col-md-6">
       <img src="image/Main-Image.jpg" class="img-fluid" alt="صورة"
       style="width: 400px;height: 300px ;">
+
     </div>
-    <div class="col-md-6 col-sm-12">
-      <h1 class="aboutme" > Iam <span id="aout-write" class="text-primary" ></span></h1>
-      <p>  I can build the site from scratch to the end As
+    <div class="col-md-6 col-sm-12" >
+      <h1 class="aboutme text-light" > Iam <span id="aout-write" class="text-warning" ></span></h1>
+      <p class="text-light" style="font-size: 13px ;width: 90% ;text-transform: capitalize;">  I can build the site from scratch to the end As
         for the field of front, I am a student
         at the Faculty of Science at Mansoura
         University, specializing in the Department
@@ -136,22 +144,22 @@ top: 0; z-index: 199; width: 100%;">
 
 
 <!-- my skills  -->
-<div class="container myskills " style="padding: 40px 0 0 ;">
+<div class="containerr myskills " style="padding: 40px 0 0 ; background-color: #452a77;">
   <div class="row">
-      <div class="col-12 text-center">
-          <h2 id="headskills"> My Skills</h2>
+      <div class="col-12 text-center text-warning">
+          <h2 id="headskills"><span class="text-light ">My</span>   Skills</h2>
       </div>
   </div>
   
     
-<div class="row cards"   >
+<div class="row cards  " id="rowSkills"  >
   <div class=" col-md-4" style="margin:  5px 0 ;">
       <div class="card card-skills  " style="width: 280px; height: 340px;">
           <img src="image/skills1.jpg" class="card-img-top" alt="..." style="height:70%;">
           <div class="card-body">
               <p class="card-text  text-center text-primary" style="border-radius: 20px;">HTML5  </p>
               <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar bg-primary" style="width: 85%"></div>
+                <div class="progress-bar bg-warning" style="width: 85%"></div>
               </div>
           </div>
       </div>
@@ -162,7 +170,7 @@ top: 0; z-index: 199; width: 100%;">
           <div class="card-body">
               <p class="card-text   text-center text-primary " style="border-radius: 20px; ">CSS3 </p>
               <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar w-75"></div>
+                <div class="progress-bar w-75 bg-warning"></div>
               </div>
 
           </div>
@@ -170,11 +178,11 @@ top: 0; z-index: 199; width: 100%;">
   </div>
   <div class="col-md-4" style="margin:  5px 0 ;">
       <div class="card card-skills" style="width: 280px; height: 340px;">
-          <img src="image/images.jpg" class="card-img-top" alt="..."  style="height:70%;">
+          <img src="image/skill3.jpg" class="card-img-top" alt="..."  style="height:70%;">
           <div class="card-body">
               <p class="card-text   text-center text-primary" style="border-radius: 20px;">JavaScript  </p>
               <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar w-75"></div>
+                <div class="progress-bar w-75 bg-warning"></div>
               </div>
           </div>
       </div>
@@ -185,16 +193,16 @@ top: 0; z-index: 199; width: 100%;">
 <!-- ------- -->
 
  <!-- project for me -->
-  <div class="container  " style="padding:  50px 0  0 ;"> 
+  <div class="containerr  " style="padding:  50px 0  0 ;background-color: #452a77;"> 
   <div class="row">
     <div class="col-12 text-center ">
-        <h2 class="text-warning" id="headpoject " style="margin: 20px 0 ;"> <span class="text-primary">My</span>  Project </h2>
+        <h2 class="text-warning" id="headpoject " style="margin: 20px 0 ;"> <span class="text-light">My</span>  Project </h2>
     </div>
 </div>
 
  
-<div class="row">
-  <div class="col-md-4 mb-3">
+<div class="row" id="rowProject">
+  <div class="col-md-4  ">
     <div class="card " style="width: 280px; height: 300px;border: 1px solid orange;">
       <img src="image/المسلم.jpg" class="card-img-top" alt="..."  style="border-radius: 2px;">
       <div class="card-body">
@@ -206,9 +214,9 @@ top: 0; z-index: 199; width: 100%;">
   </div>
  
   <!-- أضف بطاقات إضافية هنا -->
-  <div class="col-md-4 mb-3">
+  <div class="col-md-4 ">
     <div class="card" style="width: 280px; height: 300px;border: 1px solid orange;">
-      <img src="image/coofe shop.jpg" class="card-img-top" alt="...">
+      <img src="image/coffe hop.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">  Coffe Shop </h5>
         <p class="card-text">" Coffee Shop: A Place to Savor Delicious Brews" </p>
@@ -217,7 +225,7 @@ top: 0; z-index: 199; width: 100%;">
     </div>
   </div>
 <!-- أضف بطاقات إضافية هنا -->
-  <div class="col-md-4 mb-3">
+  <div class="col-md-4 ">
     <div class="card" style="width: 280px; height: 300px;border: 1px solid orange;">
       <img src="image/palestine.jpg" class="card-img-top" alt="...">
       <div class="card-body">
@@ -228,7 +236,7 @@ top: 0; z-index: 199; width: 100%;">
     </div>
   </div>
 <!-- أضف بطاقات إضافية هنا -->
-  <div class="col-md-4 mb-3">
+  <div class="col-md-4 ">
     <div class="card" style="width: 280px; height: 300px;border: 1px solid orange;">
       <img src="image/resturentt.jpg" class="card-img-top" alt="...">
       <div class="card-body">
@@ -239,7 +247,7 @@ top: 0; z-index: 199; width: 100%;">
     </div>
   </div>
 <!-- أضف بطاقات إضافية هنا -->
-  <div class="col-md-4 mb-3">
+  <div class="col-md-4 ">
     <div class="card" style="width: 280px; height: 300px;border: 1px solid orange;">
       <img src="image/ofline or online.jpg" class="card-img-top" alt="...">
       <div class="card-body">
@@ -250,7 +258,7 @@ top: 0; z-index: 199; width: 100%;">
     </div>
   </div>
 <!-- أضف بطاقات إضافية هنا -->
-  <div class="col-md-4 mb-3">
+  <div class="col-md-4 ">
     <div class="card" style="width: 280px; height: 300px;border: 1px solid orange;">
       <img src="image/cruds.jpg" class="card-img-top" alt="...">
       <div class="card-body">
@@ -261,7 +269,7 @@ top: 0; z-index: 199; width: 100%;">
     </div>
   </div>
 <!-- أضف بطاقات إضافية هنا -->
-<div class="col-md-4 mb-3">
+<div class="col-md-4 ">
   <div class="card" style="width: 280px; height: 300px;border: 1px solid orange;">
     <img src="image/dargon.jpg" class="card-img-top" alt="...">
     <div class="card-body">
@@ -272,7 +280,7 @@ top: 0; z-index: 199; width: 100%;">
   </div>
 </div>
 <!-- أضف بطاقات إضافية هنا -->
-<div class="col-md-4 mb-3">
+<div class="col-md-4 ">
   <div class="card" style="width: 280px; height: 300px;border: 1px solid orange;">
     <img src="image/shofiaa.jpg" class="card-img-top" alt="...">
     <div class="card-body">
@@ -283,7 +291,7 @@ top: 0; z-index: 199; width: 100%;">
   </div>
 </div>
 <!-- أضف بطاقات إضافية هنا -->
-<div class="col-md-4 mb-3">
+<div class="col-md-4 ">
   <div class="card" style="width: 280px; height: 300px;border: 1px solid orange;">
     <img src="image/calc.jpg" class="card-img-top" alt="...">
     <div class="card-body">
@@ -295,7 +303,7 @@ top: 0; z-index: 199; width: 100%;">
 </div>
 
   <!-- أضف بطاقات إضافية هنا -->
-  <div class="col-md-4 mb-3">
+  <div class="col-md-4 ">
     <div class="card" style="width: 280px; height: 300px;border: 1px solid orange;">
       <img src="image/avater.jpg" class="card-img-top" alt="...">
       <div class="card-body">
@@ -318,16 +326,16 @@ top: 0; z-index: 199; width: 100%;">
  
 
 <!-- content me  -->
-<div class="container" id="ContactMe">
+<div class="containerr" id="ContactMe" style="background-color: #452a77;">
   <div class="row">
-    <div class="col-12 text-center">
-      <h2 id="headskills">Contact Me</h2>
+    <div class="col-12 text-center text-warning">
+      <h2 id="headskills">Contact <span class="text-light">Me</span> </h2>
     </div>
   </div>
 
-  <div class="row">
+  <div class="row " id="row">
     <div class="col-md-6">
-      <form class="text-primary">
+      <form class="text-light">
         <div class="mb-3  ">
           <label for="name" class="form-label">Name</label>
           <input type="text" class="form-control" id="name" placeholder="Enter your name">
@@ -344,7 +352,9 @@ top: 0; z-index: 199; width: 100%;">
       </form>
     </div>
     <div class="col-md-6 " style="margin-left: auto;padding: 20px 0 0 30px ">
-      <img src="image/IMG_20230422_222502.jpg" class="img-fluid" alt="Your Image" style="width: 300px; height: 300px; border-radius: 50%;margin: 10px 5px   ; ; ">
+      <img src="image/IMG_20230422_222502.jpg" class="img-fluid" alt="Your Image" 
+      style="width: 300px; height: 300px; border-radius: 50%;margin: 10px 5px ">
+     
     </div>
   </div>
 </div>
