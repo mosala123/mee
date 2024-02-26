@@ -1,0 +1,111 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+body{
+color: white;
+}
+
+/* header */
+.navbar{
+  color: white;
+}
+.navbar-nav  {
+margin-left: auto;
+padding:  0 5px ;
+}
+.navbar-brand {
+margin-right: auto;
+padding:  0 5px ;
+}
+.nav-item{
+padding:  0 5px ;  
+}
+ 
+ 
+/*---------------------------------------  */
+.jumbotron{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+ 
+.jumbotron img{
+width: 400px;
+height: 400px;
+margin-right: 60px ;
+animation-name: uptodown;
+animation-duration: 2s;
+animation-direction: 2s;
+animation-iteration-count: infinite;
+overflow: hidden;
+animation-direction: alternate;
+}
+@keyframes uptodown{
+  0%{
+   transform: translateY(-3%);
+  }
+  100%{
+
+  }
+}
+
+/* ---------------------------------------- */
+ 
+
+
+
+/* containerServices */
+
+
+
+
+
+
+
+
+
+
+/* about me */
+.aboutme{
+  font-size: 25px ;
+}
+#about{
+display: flex;
+align-items: center;
+padding: 30px 0 ;
+}
+/* --------------------------------- */
+/* my skills  */
+#headskills{
+max-width: 30px 0 20px ;
+}
+/* projects  */
+.carousel{
+border: 1px solid transparent ;  
+}
+#headpoject{
+margin: 40px 0 20px  ;
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.card {
+  background-color: #452a77; /* خلفية بطاقة اللون الرمادي */
+  animation: slideIn 1s forwards; /* تأثير حركي بتأخير 1 ثانية */
+}
+/* -------- */
+/* contect me  */
+#ContactMe{
+  margin: 40px 0 20px  ;
+}
+
+
