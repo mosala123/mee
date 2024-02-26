@@ -1,4 +1,4 @@
-*{
+ *{
 padding: 0;
 margin: 0;
 box-sizing: border-box;
@@ -8,9 +8,6 @@ color: white;
 }
 
 /* header */
-.navbar{
-  color: white;
-}
 .navbar-nav  {
 margin-left: auto;
 padding:  0 5px ;
@@ -20,29 +17,34 @@ margin-right: auto;
 padding:  0 5px ;
 }
 .nav-item{
-padding:  0 5px ;  
+padding:  0 5px  ;  
+color: #452a77;
 }
- 
  
 /*---------------------------------------  */
-.jumbotron{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
- 
-.jumbotron img{
-width: 400px;
-height: 400px;
-margin-right: 60px ;
+.custom-bg {
+  width: 200px;
+  height: 200px;
+  background-image: url('path/to/border-radius-bg.svg');
+  background-size: cover;
+cursor: pointer;
+background-color: orange;
+border-radius: 30% 70% 70% 30% / 30% 30% 60% 70% ;
+position: absolute;
+right: 60px ;
+top: 50px;
 animation-name: uptodown;
 animation-duration: 2s;
 animation-direction: 2s;
 animation-iteration-count: infinite;
-overflow: hidden;
 animation-direction: alternate;
+margin-top: 20px ;
+z-index: 1;
+}
+
+ 
+.jumbotron img{
+  position: relative; z-index: 2;
 }
 @keyframes uptodown{
   0%{
@@ -54,10 +56,26 @@ animation-direction: alternate;
 }
 
 /* ---------------------------------------- */
- 
-
-
-
+#Services{
+margin-top: -36px;
+}
+#rowServices{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 98%;
+}
+#Services .card
+,#rowSkills .card
+,#rowProject .card{
+  box-shadow:  2px  2px   2px 2px    rgba(255, 166, 0, 0.791);
+  transition: 0.3s ease;
+}
+#Services .card:hover
+,#rowSkills .card:hover
+,#rowProject .card:hover{
+  box-shadow: none;
+}
 /* containerServices */
 
 
@@ -68,7 +86,7 @@ animation-direction: alternate;
 
 
 
-
+/* ====================== */
 /* about me */
 .aboutme{
   font-size: 25px ;
@@ -80,10 +98,27 @@ padding: 30px 0 ;
 }
 /* --------------------------------- */
 /* my skills  */
-#headskills{
-max-width: 30px 0 20px ;
+ 
+#rowProject .col-md-4 .card{
+  margin: 7px 2px ;
 }
+
+ #rowSkills{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 96%;
+
+ }
 /* projects  */
+#rowProject{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 96%;
+  margin: 0 auto;
+}
 .carousel{
 border: 1px solid transparent ;  
 }
@@ -105,7 +140,13 @@ margin: 40px 0 20px  ;
 /* -------- */
 /* contect me  */
 #ContactMe{
-  margin: 40px 0 20px  ;
+  padding: 40px 0 20px 0  ;
 }
-
+#ContactMe #row{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px auto;
+}
 
